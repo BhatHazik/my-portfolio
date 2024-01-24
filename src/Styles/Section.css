@@ -1,0 +1,830 @@
+@font-face {
+    font-family: myfont;
+    src: url(../Assets/font.ttf);
+  }
+
+*{
+    font-family: myfont;
+}
+
+
+
+.main-wrapper{
+    overflow-x: hidden;
+    z-index: 100;
+    position: relative;
+    background-color: #EFEAE3; 
+}
+
+
+
+.page1{
+    min-height: 70vh;
+    position: relative;
+    padding: 0 2vw;
+}
+
+.page1 video{
+    margin-top: 3vw;
+    border-radius: 2vw;
+    width: 100%;
+    position: relative;
+    
+}
+
+.hero-wrapper{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 7vh;
+    border-bottom: 1px solid #BFBBB6;
+    padding-bottom: 5vh;
+}
+
+
+
+.hero-left h3 {
+    font-size: 1.6vw;
+    width: 26vw;
+    line-height: 1.5vw;
+}
+
+
+.hero-right h1{
+    font-size: 9vw;
+    line-height: 7vw;
+    text-align: right;
+    margin: 0;
+    
+
+}
+
+.hero-shape{
+    position: absolute;
+    height: 30vw;
+    width: 46vw;
+    right: 0;
+    top: 55vh;
+    
+}
+
+.hero-shape1{
+    background-color: #FE330A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 100%;
+    width: 100%;
+    filter: blur(1vw);
+    position: absolute;
+
+}
+
+.hero-shape2{
+    background-color: #FE330A;
+    /* background-color: orange; */
+    border-radius: 50%;
+    height: 25vw;
+    width: 25vw;
+    filter: blur(1vw);
+    position: absolute;
+    animation-name: animetion2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hero-shape3{
+    background-color: #FE330A;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    height: 25vw;
+    width: 25vw;
+    filter: blur(1vw);
+    position: absolute;
+    animation-name: animetion1;
+    animation-duration: 4.2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hero-shape4{
+background: linear-gradient(#fe570a,#FE330A);
+/* background-color: rgb(17, 0, 255); */
+border-radius: 50%;
+height: 25vw;
+width: 25vw;
+filter: blur(1vw);
+position: absolute;
+animation-name: animetion3;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes animetion1 {
+    from{
+        transform: translate(50%, -20%);
+    }
+    to{
+        transform: translate(50%, 5%);
+    }
+}
+
+@keyframes animetion2 {
+    from{
+        transform: translate(-2%, -8%);
+    }
+    to{
+        transform: translate(-3%, 10%);
+    }
+}
+
+@keyframes animetion3 {
+    from{
+        transform: translate(80%, 0%);
+    }
+    to{
+        transform: translate(80%, -20%);
+    }
+}
+
+
+
+.page2{
+    min-height: 80vh;
+    width: 100%;
+    padding: 5vw 0 0 0;
+    position: relative;
+}
+
+.text-container h1{
+
+    font-size: 7vw;
+    margin: 0;
+    display: inline-block;
+    
+
+}
+
+.moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.text-container{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: animation-text;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.circle{
+    height: 3.5vw;
+    width: 3.5vw;
+    background-color: #FE330A;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw 0.5vw 2vw;
+}
+
+
+ @keyframes animation-text {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.page2-bottom{
+    height: 70vh;
+    width: 100%;
+    /* background-color: #FE330A;s */
+    padding-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    
+}
+
+.page2-h2{
+    width: 45vw;
+    padding-left: 6vw;
+    margin-bottom: 8vw;
+}
+
+.page2 h2{
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+    
+}
+
+.page2 p{
+    font-size: 1vw;
+    padding: 1vw 1vw;
+}
+
+.page2-image{
+    width: 25vw;
+   
+    height: max-content;
+    margin-right: 5vw;
+    
+    
+    
+}
+.page2-image img{
+    width: 25vw;
+    height: 17vw;
+    border-radius: 3vw;
+}
+
+.page2-shape{
+    height: 32vw;
+    width: 32vw;
+    border-radius: 50%;
+    background: linear-gradient( #FE330A,#fe570a);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: -1;
+    animation-name: animation-page2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    filter: blur(2.3vw);
+}
+
+
+@keyframes animation-page2 {
+    from{
+        transform: translate(10%, -10%) skew(10deg)rotate(0deg);
+    }
+    to{
+        transform: translate(-10%, 10%)skew(-5deg)rotate(20deg);
+    }
+}
+
+
+
+.page3{
+    min-height: 20vh;
+    width: 100%;
+    
+    
+}
+
+
+
+.project{
+    height: 8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    position: relative;
+    transition: all ease 0.3s;
+    border-bottom:solid 1px #BFBBB6 ;
+    overflow: hidden;
+}
+
+.project::after{
+    content: "";
+    background-color: #fd8f00;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.project:hover::after{
+    top: 0;
+    
+}
+
+.project:hover{
+    color: white;
+}
+
+.circle-text{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 3px;
+    padding-left: 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+.circle-text h5{
+    margin: 0;
+}
+
+.small-circle{
+    height: 10px;
+    width: 10px;
+    background-color: #FE330A;
+    border-radius: 50%;
+
+}
+
+.project h1{
+    font-size: 3vw;
+    margin: 0;
+    z-index: 9;
+    
+}
+
+.page3 h4{
+    padding:0.7vw 1vw;
+    border: 1px solid rgba(0, 0, 0, 0.311);
+    border-radius: 50px;
+    font-size: 1vw;
+    font-family: myfont;
+    color: rgba(62, 62, 62, 0.826);
+    position: relative;
+    transition: all ease-in-out 0.35s;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 2.9vw;
+}
+
+
+  .page3 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease-in-out 0.35s;
+    
+  }
+
+  .page3 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .page3 h4 a{
+    text-decoration: none;
+    color:rgba(62, 62, 62, 0.826) ;
+    z-index: 9;
+    position: relative;
+  }
+
+  .page3 h4:hover a{
+    color: white;
+
+  }
+
+  .space{
+    height: 7vw;
+    width: 100%;
+  }
+
+
+
+
+
+.fixed-footer{
+    height: 100vh ;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: black;
+   
+
+    
+
+
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-h1 h1{
+    font-size: 17vw;
+    margin:0;
+    color: white;
+    z-index: -1;
+   
+}
+
+.footer-h1{
+    height: 20vw;
+    width: 90vw;
+    margin-bottom: 5vw;
+    position: absolute;
+    top: 50%;
+}
+
+.page4{
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+
+.footer-shape{
+    height: 40vw;
+    width: 150%;
+    background: linear-gradient(#fe570a, #FE330A);
+    animation-name: animation-footer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: -40%;
+    filter: blur(50px);
+    z-index: 1;   
+}
+
+.footer-shape2{
+    height: 35vw;
+    width: 150%;
+    background: linear-gradient(#fe3f0a, #FE330A);
+    position: absolute;
+    animation-name: animation2-footer;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: -30%;
+    filter: blur(90px);
+    z-index: 1;
+}
+
+.footer-shape3{
+    /* background-color: #FE330A; */
+    height: 25vw;
+    width: 100%;
+    position: absolute;
+
+}
+
+.footer-links{
+    height: 10vw;
+    width: max-content;
+    /* background-color: aliceblue; */
+    position: absolute;
+    top: 19%;
+    left: 7%;
+    z-index: 1;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    display: block;
+    line-height: 3vw;
+}
+
+.footer-links a:hover{
+    color: #bfbbb679;
+}
+
+.footer-bottom{
+    height: 5vw;
+    width: 89%;
+    /* background-color: #fd8f00; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(137, 128, 128, 0.776);
+    color: white;
+    
+}
+
+.footer-bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom a:hover{
+    color: #BFBBB6;
+}
+
+
+@keyframes animation-footer {
+    from{
+        transform:rotate(5deg)skew(40deg);
+    }
+    to{
+        transform:rotate(22deg)skew(30deg);
+    }
+    
+}
+
+@keyframes animation2-footer {
+    from{
+        transform:rotate(-10deg);
+    }
+    to{
+        transform:rotate(-20deg);
+    }
+    
+}
+
+
+
+@media screen and (max-width:765px) {
+    .hero-left h3 {
+        font-size: 3vw;
+        width: 45vw;
+        line-height: 3vw;
+    }
+    
+    .hero-left{
+        position: absolute;
+        top: 35%;
+    }
+
+    .hero-right{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .hero-right h1{
+        font-size: 80px;
+        line-height: 80px;
+        text-align: right;
+        margin: 0;
+        display: inline-block;
+        
+    
+    }
+
+    .hero-wrapper{
+        display: block;
+    }
+
+    
+
+    .page2-bottom{
+        display: block;
+        padding-top: 15vw;
+    }
+
+    .page2-h2{
+        width: 85vw;
+        padding-left: 6vw;
+        margin-bottom: 8vw;
+    }
+    
+    .page2 h2{
+        font-size: 4vw;
+        line-height: 4vw;
+        
+    }
+    
+    .page2 p{
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+        padding: 2vw 2vw;
+    }
+    
+    .page2-image{
+        width: 40vw;
+       
+        height: max-content;
+        margin-left: 5vw;
+        
+        
+        
+    }
+    .page2-image img{
+        width: 45vw;
+        height: 28vw;
+        border-radius: 10%;
+        
+    }
+
+    .page2-shape{
+        height: 52vw;
+        width: 52vw;
+        position: absolute;
+        left: 45%;
+        top: 30%;
+    }
+
+    .fixed-footer{
+        height: 70vh;
+    }
+
+    .footer-content{
+        height: 70vh;
+    }
+
+    .page4{
+        height: 70vh;
+    }
+
+    .footer-shape{
+        height: 50vw;
+
+    }
+    .footer-shape2{
+        height: 55vw;
+    }
+    .footer-shape3{
+        height: 35vw;
+    }
+
+    .page3 h4{
+        font-size: 2vw;
+    }
+
+  
+}
+
+
+@media screen and (max-width:520px){
+
+    .hero-left h3 {
+        font-size: 4vw;
+        width: 65vw;
+        line-height: 4vw;
+    }
+    
+    .hero-left{
+        position: absolute;
+        top: 60%;
+    }
+
+    .hero-right{
+        display: flex;
+        justify-content: end;
+        
+    }
+    
+    .hero-right h1{
+        font-size: 70px;
+        line-height: 70px;
+        text-align: right;
+        margin: 0;
+        display: inline-block;
+        
+    
+    }
+
+    .hero-wrapper{
+        display: block;
+        height: 40vh;
+        position: relative;
+    }
+
+    .hero-shape{
+        position: absolute;
+        top: 50%;
+    }
+
+    .page2-bottom{
+        height: 50vh;
+    }
+    .page2{
+        height: 70vh;
+    }
+    .text-container h1{
+        font-size: 6vh;
+    }
+    .circle{
+        height: 3.5vh;
+        width: 3.5vh;
+    }
+
+    .page2-bottom{
+        display: block;
+        padding-top: 10vw;
+    }
+
+    .page2-h2{
+        width: 85vw;
+        padding-left: 6vw;
+        margin-bottom: 8vw;
+    }
+    
+    .page2 h2{
+        font-size: 5vw;
+        line-height: 5vw;
+        
+    }
+    
+    .page2 p{
+        font-size: 2vw;
+        line-height: 2.8vw;
+        padding: 2vw 2vw;
+    }
+    
+    .page2-image{
+        width: 55vw;
+       
+        height: max-content;
+        margin-left: 5vw;
+        
+        
+        
+    }
+    .page2-image img{
+        width: 55vw;
+        height: 34vw;
+        border-radius: 10%;
+        
+    }
+
+    .page2-shape{
+        height: 52vw;
+        width: 52vw;
+        position: absolute;
+        left: 45%;
+        top: 30%;
+    }
+
+    .project{
+        height: 15vw;
+    }
+
+    .project h1{
+        font-size: 5vw;
+    }
+
+    .page2-shape{
+        filter: blur(4vw);
+    }
+
+    .fixed-footer{
+        height: 50vh;
+    }
+
+    .footer-content{
+        height: 50vh;
+    }
+
+    .page4{
+        height: 50vh;
+    }
+
+    .footer-links a{
+        font-size: 5vw;
+        line-height: 5.5vw;
+    }
+
+    .footer-shape{
+        height: 60vw;
+        position: absolute;
+        top: -30%;
+        filter: blur(6vw);
+
+    }
+    .footer-shape2{
+        height: 65vw;
+        position: absolute;
+        top: -45%;
+        filter: blur(5vw);
+    }
+    .footer-shape3{
+        height: 35vw;
+    }
+    .footer-bottom h4{
+        font-size: 2vw;
+    }
+
+    
+
+ 
+}

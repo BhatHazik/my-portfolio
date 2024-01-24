@@ -1,0 +1,135 @@
+.about-wrapper{
+    display: flex;
+    background-color: #EFEAE3; 
+    height: 80vh;
+    align-items: center;
+    position: relative;
+   
+}
+
+.about-image img{
+    
+    height: 29vw;
+    width: 35vw;
+    border-radius: 5vw;
+}
+
+.about-image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+.about-sec2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.about-sec2 h1{
+    font-size: 5vw;
+    /* margin-top: 7vw ; */
+    margin-bottom: 1vw;
+    /* margin-left: 2vw; */
+    text-align:left ;
+   
+}
+.about-sec2 h3{
+    font-size: 1.3vw;
+    margin: 0;
+    margin-bottom: 1vw;
+    z-index: 10;
+    text-align: left;
+    
+}
+
+.about-shape{
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    background: linear-gradient( #FE330A, #fe740a);
+    filter: blur(1vw);
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    animation-name: animation-about;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+    z-index: 9;
+  
+}
+
+
+@keyframes animation-about {
+
+    from{
+        transform: translate(-10%, 2%) skew(10deg);
+    }
+    to{
+        transform: translate(15%, -10%) skew(-9deg);
+    }
+    
+}
+
+
+
+@media screen and (max-width:765px){
+
+
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .about-image{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: max-content;
+        margin-top: 4vw;
+    }
+    .about-image img{
+        width: 60vw;
+        height: 40vw;
+    }
+    .about-sec2{
+        height: 100%;
+        width: 80%;
+
+
+    }
+    .about-sec2 h1{
+        font-size: 10vw;
+        margin-top: 10vh;
+        line-height: 10vw;
+        
+    }
+    .about-sec2 h3{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin-top: 3vw;
+    }
+    .about-wrapper{
+        display: flex;
+        align-items: center;
+        
+    }
+    .about-shape{
+        position: absolute;
+        top: 70%;
+        right: 17%;
+        height: 35vw;
+        width: 35vw;
+        filter: blur(2vw);
+    }
+}

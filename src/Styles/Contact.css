@@ -1,0 +1,110 @@
+.contact-wrapper{
+    display: flex;
+    background-color: #EFEAE3; 
+    height: 80vh;
+    align-items: center;
+    position: relative;
+   
+}
+
+.map img{
+    border-radius: 50%;
+    height: 29vw;
+    width: 29vw;
+}
+
+.map{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-sec2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.contact-sec2 h1{
+    font-size: 5vw;
+    margin-top: 7vw ;
+    margin-bottom: 1vw;
+}
+.contact-sec2 h3{
+    font-size: 1.3vw;
+    margin: 0;
+    margin-bottom: 1vw;
+    z-index: 10;
+    
+}
+
+.contact-shape{
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    background: linear-gradient( #FE330A, #fe740a);
+    filter: blur(1vw);
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    animation-name: animation-contact;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+    z-index: 9;
+  
+}
+
+
+@keyframes animation-contact {
+
+    from{
+        transform: translate(-10%, 2%) skew(10deg);
+    }
+    to{
+        transform: translate(15%, -10%) skew(-9deg);
+    }
+    
+}
+
+
+
+@media screen and (max-width:765px){
+
+    .map{
+        display: none;
+    }
+    .contact-sec2{
+        height: 100%;
+        width: 100%;
+
+    }
+    .contact-sec2 h1{
+        font-size: 10vw;
+        margin-top: 25vh;
+    }
+    .contact-sec2 h3{
+        font-size: 3vw;
+    }
+    .contact-wrapper{
+        display: flex;
+        align-items: center;
+        
+    }
+    .contact-shape{
+        position: absolute;
+        top: 34%;
+        right: 10%;
+        height: 35vw;
+        width: 35vw;
+        filter: blur(2vw);
+    }
+}
