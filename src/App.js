@@ -42,7 +42,7 @@ function App() {
   <BrowserRouter>
   
   <Navbar/>
-  <Section/>
+  
   <Routes>
     <Route path="/" element={<Section/>}/>
     <Route  path="/contact" element={<Contact/>}/>
