@@ -9,7 +9,6 @@ const Navbar = (props) => {
   const handleBars = () => {
     setbarsDiv(!barsDiv)
     // console.log(barsDiv)
-
   }
 
   return (

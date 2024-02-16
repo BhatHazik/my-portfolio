@@ -119,27 +119,27 @@ const Section = () => {
           <h5>FEATURED PROJECTS</h5>
         </div>
           <div className='project'>
-            <h1>Foodlle</h1>
+            <h1><a href='https://bhathazik.github.io/frontend-foodlle'>Foodlle</a></h1>
           </div>
         
         
           <div className='project'>
-            <h1>PUSG</h1>
+            <h1><a href='https://bhathazik.github.io/ksa/'>KSA</a></h1>
           </div>
         
         
           <div className='project'>
-            <h1>Amazon(clone)</h1>
+            <h1><a href='https://github.com/BhatHazik/Amazon-clone'>AMAZON(clone)</a></h1>
           </div>
     
       
           <div className='project'>
-            <h1>API (Application Programing Interface)</h1>
+            <h1><a href='https://github.com/BhatHazik/backend-foodlle'>Backend(1st)</a></h1>
           </div>
    
        
           <div className='project'>
-            <h1>Backend</h1>
+            <h1><a href='https://github.com/BhatHazik/KSA-backend'>Backend(2nd)</a></h1>
         </div> 
 
         <h4><Link to='/project'>All Projects</Link></h4>
@@ -169,7 +169,7 @@ const Section = () => {
       <div className='footer-bottom'>
         <h4>Copyright © The Hazik</h4>
         <h4><a href='https://www.youtube.com/c/HZKGAMINGOFFICIAL'>Youtube</a></h4>
-        <h4><a href='https://www.instagram.com/ur_hazik/'>Instagram</a></h4>
+        <h4><a href='https://github.com/BhatHazik/'>GitHub</a></h4>
         <h4><a href='https://www.linkedin.com/in/hazik-bhat-1842572a1/'>LinkedIn</a></h4>
       </div>
       </div>

@@ -7,7 +7,10 @@
     font-family: myfont;
 }
 
-
+/* .project a {
+    color: white;
+    text-decoration: none;
+} */
 
 .main-wrapper{
     overflow-x: hidden;
@@ -315,15 +318,21 @@ animation-iteration-count: infinite;
     left: 0;
     top: -100%;
     transition: all ease 0.3s;
+    color: white;
 }
 
 .project:hover::after{
     top: 0;
     
 }
-
-.project:hover{
+.project a{
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.3s;
+}
+.project:hover a{
     color: white;
+    text-decoration: none;
 }
 
 .circle-text{

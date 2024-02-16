@@ -39,7 +39,7 @@ function App() {
     
 <div>
 
-  <BrowserRouter>
+  <BrowserRouter basename="/my-portfolio">
   
   <Navbar/>
   
